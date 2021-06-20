@@ -1,0 +1,239 @@
+
+.navBar{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.navList {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(11,1fr);
+  grid-template-rows: repeat(12,1fr);
+  grid-column-gap: 2vw;
+  margin-top: 2vh;
+}
+
+.navItem1 {
+  grid-column: 2;
+  grid-row: 6;
+  list-style: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.2rem;
+}
+.navItem2 {
+  grid-column: 3;
+  grid-row: 6;
+  list-style: none;
+  border-bottom: 2px solid rgb(255, 0, 0);
+  border-left: 2px solid rgb(255, 0, 0);
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.2rem;
+}
+.navItem3 {
+  grid-row: 6;
+  grid-column: 4;
+  list-style: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.2rem;
+}
+.navItem4 {
+  grid-column:5;
+  grid-row: 6;
+  list-style: none;
+  border-bottom: 2px solid rgb(255, 0, 0);
+  border-left: 2px solid rgb(255, 0, 0);
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.2rem;
+}
+.navItem5 {
+  grid-column: 6;
+  grid-row: 1/-1;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  display:flex;
+  
+}
+.navItem5 img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+
+.navItem6 {
+  display: grid;
+  grid-column: 10/11;
+  grid-row: 6;
+  list-style: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.2rem;
+}
+.navItem6:hover{
+  transform: scale(1.3);
+  border:none;
+  background-color: rgb(27, 26, 26);
+    box-shadow:0px 0px 5px 1px rgb(255, 0, 0);
+}
+
+.navItem1:hover{
+  transform: scale(1.3);
+  border:none;
+  background-color: rgb(27, 26, 26);
+    box-shadow:0px 0px 5px 1px rgb(255, 0, 0);
+}
+.navItem2:hover{
+  transform: scale(1.3);
+  border:none;
+  background-color: rgb(230, 21, 21);
+    box-shadow:0px 0px 5px 2px rgb(0, 0, 0);
+}
+.navItem3:hover{
+  transform: scale(1.3);
+  border:none;
+  background-color: rgb(27, 26, 26);
+    box-shadow:0px 0px 5px 1px rgb(255, 0, 0);
+}
+.navItem4:hover{
+  transform: scale(1.3);
+  border:none;
+  background-color: rgb(230, 21, 21);
+  box-shadow:0px 0px 5px 2px rgb(0, 0, 0);
+}
+.navItem5:hover{
+  transform: scale(0.9);
+
+}
+
+
+ol, ul {
+  padding-left: 0;
+  
+}
+
+@media (max-width: 750px) {
+
+  .navBar{
+    height:max-content;
+    display:grid;
+    grid-template-rows: 15vh;
+    grid-template-columns: repeat(3,1fr);
+    height: max-content;
+    
+  }
+  .navList {
+    grid-column-gap: 0;
+    height: 100%;
+    grid-column: 1/-1;
+    
+  }
+  .navItem5{
+    grid-column: 5/8;
+    height: 100%;
+    display: flex;
+  }
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  }
+
+  .navItem6{
+    grid-column:2/4;
+    border:1px solid white;
+  }
+
+  .navItem1 {
+    display: none;
+    
+  }
+  .navItem2{
+    display: none;
+  }
+  .navItem3{
+    display: none;
+  }
+  .navItem4{
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+
+  .navBar{
+    height:max-content;
+    display:grid;
+    grid-template-rows: 20vh;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 0.8rem;
+    
+  }
+  .navList {
+    grid-column-gap: 10px;
+    height: 100%;
+    grid-column: 1/-1;
+    
+  }
+  .navItem5{
+    grid-column: 5/8;
+    height: 100%;
+    display: flex;
+    /*border: 1px solid black;*/
+  }
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  }
+
+  .navItem6{
+    grid-column:9/11;
+    grid-row:6/8;
+    border:1px solid white;
+  }
+
+  .navItem1 {
+    grid-column:1/3;
+    grid-row:2/4;
+    border:2px solid rgb(0, 0, 0);
+    
+  }
+  .navItem2{
+    grid-column:1/3;
+    grid-row:5/7;
+    border:2px solid rgb(255, 0, 0);
+  }
+  .navItem3{
+    grid-column:1/3;
+    grid-row:8/10;
+    border:2px solid rgb(0, 0, 0);
+  }
+  .navItem4{
+    grid-column:1/3;
+    grid-row:11/13;
+    border:2px solid rgb(255, 0, 0);
+  }
+}
+
+

@@ -1,0 +1,24 @@
+.flexboxContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    
+}
+.flexboxContainer div{
+    
+}
+.test{
+    box-shadow: 0px 0px 10px 3px rgb(255, 0, 0);
+}
+.textArea{
+    display: flex;
+    opacity: 0.6;
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+.textArea h5{
+    color: white;
+}
