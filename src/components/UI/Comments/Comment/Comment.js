@@ -11,7 +11,7 @@ export default function Comment() {
                 <div className="col-2 ">
                     <img src={avatar}></img>
                     <div className="row">
-                        <div className="col">Test User</div>
+                        <div className="col">Test UserR</div>
                     </div>
                     <div className="row">
                         <div className="col">01.01.2020</div>
